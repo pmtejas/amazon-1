@@ -2,7 +2,7 @@ import React from "react";
 import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
-// import Subtotal from "./Subtotal";
+import Subtotal from "./Subtotal";
 
 function Checkout() {
    //eslint-disable-next-line
@@ -37,7 +37,7 @@ function Checkout() {
         </div>
       </div>
       <div className="checkout__right">
-        {/* <Subtotal /> */}
+        <Subtotal />
         <h2>The Subtotal will go here</h2>
       </div>
     </div>
