@@ -2,8 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Home from './Home'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Checkout from './Checkout';
-import Login from './Login';
+import './App.css'
 
 function App() {
   return (
@@ -18,23 +17,6 @@ function App() {
                 <Home />
               </>
             }
-          />
-                <Route
-            path="/Checkout"
-            element={
-              <>
-                <Header />
-                <Checkout/>
-              </>
-            }
-          />
-          <Route
-          path='/Login'
-          element={
-            <>
-            <Login/>
-            </>
-          }
           />
 
         </Routes>
