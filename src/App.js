@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './Login';
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Checkout from "./Checkout";
 
 function App() {
   //eslint-disable-next-line
@@ -48,6 +49,15 @@ function App() {
                 <Login />
               </>
             }
+          />
+          <Route
+          path="/checkout"
+          element={
+            <>
+            <Header />
+            <Checkout/>
+            </>
+          }
           />
         </Routes>
       </div>
