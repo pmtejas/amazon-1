@@ -7,6 +7,7 @@ import Login from './Login';
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Checkout from "./Checkout";
+import Payment from "./Payment";
 
 function App() {
   //eslint-disable-next-line
@@ -59,6 +60,16 @@ function App() {
             </>
           }
           />
+          <Route
+          path="/payment"
+          element={
+            <>
+            <Header />
+            <Payment/>
+            </>
+          }
+          />
+
         </Routes>
       </div>
     </BrowserRouter>
