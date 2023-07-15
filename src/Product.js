@@ -6,7 +6,7 @@ function Product({ id, title, image, price, rating}) {
   console.log("this is the basket >>>", basket);
   const addToBasket = () => {
     // dispatch the item into the data layer
-    //npm config set legacy-peer-deps true
+    // npm config set legacy-peer-deps true
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
