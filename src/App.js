@@ -36,7 +36,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <Routes>
+        <Routes >
           <Route
             path="/"
             element={
